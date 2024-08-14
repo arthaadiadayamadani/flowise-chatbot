@@ -40,7 +40,7 @@ function a11yProps(index) {
 
 const embedPopupHtmlCode = (chatflowid) => {
     return `<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    import Chatbot from "https://gammatechbot.vercel.app/"
     Chatbot.init({
         chatflowid: "${chatflowid}",
         apiHost: "${baseURL}",
@@ -61,7 +61,7 @@ const App = () => {
 const embedFullpageHtmlCode = (chatflowid) => {
     return `<flowise-fullchatbot></flowise-fullchatbot>
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    import Chatbot from "https://gammatechbot.vercel.app/"
     Chatbot.initFull({
         chatflowid: "${chatflowid}",
         apiHost: "${baseURL}",
@@ -126,7 +126,7 @@ const chatwindowConfig = (isReact = false) => {
     return isReact
         ? `chatWindow: {
                     showTitle: true,
-                    title: 'Flowise Bot',
+                    title: 'Gammatech Bot',
                     titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                     showAgentMessages: true,
                     welcomeMessage: 'Hello! This is custom welcome message',
@@ -167,13 +167,13 @@ const chatwindowConfig = (isReact = false) => {
                     footer: {
                         textColor: '#303235',
                         text: 'Powered by',
-                        company: 'Flowise',
-                        companyLink: 'https://flowiseai.com',
+                        company: 'Gammatech',
+                        companyLink: 'https://www.gammatech.co.id/',
                     }
                 }`
         : `chatWindow: {
                 showTitle: true,
-                title: 'Flowise Bot',
+                title: 'Gammatech Bot',
                 titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                 showAgentMessages: true,
                 welcomeMessage: 'Hello! This is custom welcome message',
@@ -214,15 +214,15 @@ const chatwindowConfig = (isReact = false) => {
                 footer: {
                     textColor: '#303235',
                     text: 'Powered by',
-                    company: 'Flowise',
-                    companyLink: 'https://flowiseai.com',
+                    company: 'Gammatech',
+                    companyLink: 'https://www.gammatech.co.id/',
                 }
             }`
 }
 
 const embedPopupHtmlCodeCustomization = (chatflowid) => {
     return `<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    import Chatbot from "https://gammatechbot.vercel.app/"
     Chatbot.init({
         chatflowid: "${chatflowid}",
         apiHost: "${baseURL}",
@@ -259,7 +259,7 @@ const App = () => {
 const embedFullpageHtmlCodeCustomization = (chatflowid) => {
     return `<flowise-fullchatbot></flowise-fullchatbot>
 <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    import Chatbot from "https://gammatechbot.vercel.app/"
     Chatbot.initFull({
         chatflowid: "${chatflowid}",
         apiHost: "${baseURL}",
